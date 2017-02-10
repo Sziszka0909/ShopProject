@@ -1,20 +1,27 @@
 package shop;
 
 import java.util.Date;
+import java.util.Vector;
 
 public class Bolt {
 
 	private String nev;
 	private String cim;
 	private String tulajdonos;
-	private Tej[] tejpult;
+	private Vector tejpult;
 	private int flag;
 
-	public Bolt(String nev, String cim, String tulajdonos, Tej[] tejpult) {
+	public Bolt(String nev, String cim, String tulajdonos, Vector tejpult) {
 		this.nev = nev;
 		this.cim = cim;
 		this.tulajdonos = tulajdonos;
 		this.tejpult = tejpult;
+	}
+
+	public Bolt(String nev, String cim, String tulajdonos) {
+		this.nev = nev;
+		this.cim = cim;
+		this.tulajdonos = tulajdonos;
 	}
 
 	public String getNev() {
@@ -37,6 +44,10 @@ public class Bolt {
 		Date date = new Date(117, 2, 15);
 		Tej tej = new Tej(1, "Mizo", date, 1.7, 200);
 		return tej;
+	}
+
+	public void feltoltTej(Tej m) {
+
 	}
 
 }
