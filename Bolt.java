@@ -42,12 +42,58 @@ public class Bolt {
 
 	public Tej vasarolTej(Tej m) {
 		Date date = new Date(117, 2, 15);
-		Tej tej = new Tej(1, "Mizo", date, 1.7, 200);
+		Tej tej = new Tej(1234123, 1, "Mizo", date, 1.8);
 		return tej;
 	}
 
 	public void feltoltTej(Tej m) {
 
+	}
+
+	private class BoltBejegyzes {
+
+		private Tej t;
+		private int mennyiseg;
+		private int ar;
+
+		public BoltBejegyzes(Tej t, int mennyieg, int ar) {
+			this.t = t;
+			this.mennyiseg = mennyiseg;
+			this.ar = ar;
+
+		}
+
+		public Tej getT() {
+			return t;
+		}
+
+		public void setT(Tej t) {
+			this.t = t;
+		}
+
+		public int getMennyiseg() {
+			return mennyiseg;
+		}
+
+		public void setMennyiseg(int mennyiseg) {
+			this.mennyiseg = mennyiseg;
+		}
+
+		public void adMennyiseg(int mennyiseg) {
+			this.mennyiseg += mennyiseg;
+		}
+
+		public void levonMennyiseg(int mennyiseg) {
+			this.mennyiseg -= mennyiseg;
+		}
+
+		public int getAr() {
+			return ar;
+		}
+
+		public void setAr(int ar) {
+			this.ar = ar;
+		}
 	}
 
 }
