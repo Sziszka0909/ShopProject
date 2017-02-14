@@ -2,7 +2,7 @@ package shop;
 
 import java.util.Date;
 
-public class Tej {
+public abstract class Tej {
 
 	public long vonalKod;
 	public final int LITER;
