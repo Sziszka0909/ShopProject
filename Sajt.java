@@ -2,7 +2,7 @@ package shop;
 
 import java.util.Date;
 
-public class Sajt {
+public class Sajt extends Elelmiszer {
 
 	protected double suly;
 	protected double zsirtartalom;
@@ -11,9 +11,7 @@ public class Sajt {
 	protected Date szavatossagiIdo;
 
 	public Sajt(Long vonalKod, double suly, String gyarto, Date szavatossagiIdo, double zsirtartalom) {
-		this.vonalKod = vonalKod;
-		this.suly = suly;
-		this.gyarto = gyarto;
+		super(vonalKod, gyarto, szavatossagiIdo);
 		this.szavatossagiIdo = szavatossagiIdo;
 		this.zsirtartalom = zsirtartalom;
 	}
@@ -32,6 +30,7 @@ public class Sajt {
 				+ ". Szavatossági idő: " + szavatossagiIdo;
 	}
 
+	@Override
 	public boolean joMeg() {
 		Date date = new Date();
 		long ma = date.getTime();
@@ -41,14 +40,17 @@ public class Sajt {
 		return true;
 	}
 
+	@Override
 	public Long getVonalKod() {
 		return vonalKod;
 	}
 
+	@Override
 	public String getGyarto() {
 		return gyarto;
 	}
 
+	@Override
 	public Date getSzavatossagiIdo() {
 		return szavatossagiIdo;
 	}

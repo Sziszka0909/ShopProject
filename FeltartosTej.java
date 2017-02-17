@@ -8,4 +8,8 @@ public class FeltartosTej extends Tej {
 		super(vonalKod, urtartalom, gyarto, szavatossagiIdo, zsirtartalom);
 	}
 
+	@Override
+	public Long getVonalKod() {
+		return vonalKod;
+	}
 }

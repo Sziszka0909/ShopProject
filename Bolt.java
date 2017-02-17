@@ -8,14 +8,13 @@ public class Bolt {
 	private String nev;
 	private String cim;
 	private String tulajdonos;
-	private Hashtable tejpult;
-	private int flag;
+	private Hashtable elelmiszerpult;
 
-	public Bolt(String nev, String cim, String tulajdonos, Hashtable tejpult) {
+	public Bolt(String nev, String cim, String tulajdonos, Hashtable elelmiszerpult) {
 		this.nev = nev;
 		this.cim = cim;
 		this.tulajdonos = tulajdonos;
-		this.tejpult = tejpult;
+		this.elelmiszerpult = elelmiszerpult;
 	}
 
 	public Bolt(String nev, String cim, String tulajdonos) {
@@ -56,7 +55,7 @@ public class Bolt {
 		private int mennyiseg;
 		private int ar;
 
-		public BoltBejegyzes(Tej t, int mennyieg, int ar) {
+		BoltBejegyzes(Tej t, int mennyieg, int ar) {
 			this.t = t;
 			this.mennyiseg = mennyiseg;
 			this.ar = ar;
