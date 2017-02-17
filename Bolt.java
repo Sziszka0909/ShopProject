@@ -41,7 +41,7 @@ public class Bolt {
 	}
 
 	public Tej vasarolTej(Tej m) {
-		Date date = new Date(117, 2, 15);
+		Date date = new Date();
 		Tej tej = new Tej(1234123, 1, "Mizo", date, 1.8);
 		return tej;
 	}

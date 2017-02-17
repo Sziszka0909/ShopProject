@@ -4,7 +4,7 @@ import java.util.Date;
 
 public abstract class Tej {
 
-	public long vonalKod;
+	public Long vonalKod;
 	public final int LITER;
 	public final int FELLITER;
 	public final int POHAR;
@@ -15,7 +15,7 @@ public abstract class Tej {
 	protected Date szavatossagiIdo;
 	protected double zsirtartalom;
 
-	public Tej(long vonalKod, int urtartalom, String gyarto, Date szavatossagiIdo, double zsirtartalom) {
+	public Tej(Long vonalKod, int urtartalom, String gyarto, Date szavatossagiIdo, double zsirtartalom) {
 		this.vonalKod = vonalKod;
 		this.urtartalom = urtartalom;
 		this.gyarto = gyarto;
@@ -51,8 +51,8 @@ public abstract class Tej {
 
 	@Override
 	public String toString() {
-		return "Űrtartalom: " + urtartalom + " Gyártó: " + gyarto + " Szavatossági idő: " + szavatossagiIdo
-				+ " Zsírtartalom: " + zsirtartalom;
+		return "Űrtartalom: " + urtartalom + ". Gyártó: " + gyarto + ". Szavatossági idő: " + szavatossagiIdo
+				+ ". Zsírtartalom: " + zsirtartalom;
 	}
 
 }
